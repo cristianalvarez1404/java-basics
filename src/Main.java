@@ -1,22 +1,11 @@
-import java.util.Random;
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args){
-        //OOP
-        //object => Entity that holds data(attributes)
-        //And can perform actions (methods)
-        // It is a reference data type
+        //GETTERS - SETTERS
+        //They help protect object data and add rules for accessing or modifying them.
+        Caar caar = new Caar();
+        //caar.setMake("another");
+        System.out.println(caar.getModel());
+        System.out.println(caar.getMake());
 
-        Scanner scanner = new Scanner(System.in);
-        Random random = new Random();
-
-        Car car = new Car();
-        System.out.println(car.model);
-
-        car.start();
-        car.stop();
-        car.drive();
-        car.brake();
     }
 }

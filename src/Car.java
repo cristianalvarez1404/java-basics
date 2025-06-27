@@ -1,25 +1,34 @@
 public class Car {
-    String make = "Ford";
-    String model = "Mustang";
-    int year = 2025;
-    double price = 58000.99;
-    boolean isRunning = false;
+    private String make = "Ford";
+    private String model = "Mustang";
+    private int year = 2025;
+    private double price = 58000.99;
+    private boolean isRunning = false;
 
-    void start(){
+    public void start(){
         isRunning = true;
         System.out.println("You start the engine");
     }
 
-    void stop(){
+    public void stop(){
         isRunning = false;
         System.out.println("You stop the engine");
     }
 
-    void drive(){
+    public void drive(){
         System.out.println("You drive the " + model);
     }
 
-    void brake(){
+    public void brake(){
         System.out.println("You brake the " + model);
+    }
+
+    public String getModel(){
+        return this.model;
+    }
+
+    @Override
+    public String toString() {
+        return this.make + " " + this.year + " " + this.model;
     }
 }
